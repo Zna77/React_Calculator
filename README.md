@@ -34,18 +34,11 @@ A simple calculator app built using React.
 
 - Basic arithmetic operations (+, -, \*, /)
 - Decimal precision for accurate calculations
-- ...
 
 ## Technologies Used
 
 - React
 - Math.js
-- ...
-
-## Keyboard Shortcuts
-
-- AC: Clear the input
-- ...
 
 ## Decimal Precision
 
@@ -61,7 +54,7 @@ Contributions are welcome! Feel free to submit pull requests or report issues.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ## Author
 
