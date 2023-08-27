@@ -28,7 +28,7 @@ A simple calculator app built using React.
 
 - Open the app in your browser.
 - Use the buttons to perform calculations.
-- Click the history icon to view previously performed calculations.
+- You can also use the keyboard buttons to perform calculations.
 
 ## Features
 
@@ -43,6 +43,10 @@ A simple calculator app built using React.
 ## Decimal Precision
 
 The calculator app supports decimal precision for accurate calculations. When you enter a large number, it will be formatted for readability.
+
+## Escape Button
+
+The Esc button allows you to all clear the input field.
 
 ## Backspace Button
 
