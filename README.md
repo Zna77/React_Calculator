@@ -62,7 +62,7 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Mohamed Bouye
+Mohamed Bouye<br/><br/>
 Contact: Zna77@proton.me
 
 ## Acknowledgments
