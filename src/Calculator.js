@@ -103,7 +103,7 @@ const Calculator = () => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [handleButtonClick, handleCalculate, handleClear]);
+  }, [handleButtonClick, handleCalculate, handleClear, handleBackspace]);
 
   const highlightKey = (value) => {
     const button = document.querySelector(`button[data-key="${value}"]`);
