@@ -5,14 +5,13 @@ A simple calculator app built using React.
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Features](#Long sequential calculations, Backspacec deletion, Keyboard support)
-- [Technologies Used](#HTML, CSS, React, math.js)
-- [Keyboard Shortcuts](#Not included)
-- [Decimal Precision](#Not specified)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Decimal Precision](#decimal-precision)
 - [Backspace Button](#backspace-button)
-- [License](#MIT License)
-- [Author](#Mohamed Bouye)
-- [Acknowledgments](#math.js Library)
+- [License](#license)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 - [Demo Link](#demo-link)
 
 ## Getting Started
