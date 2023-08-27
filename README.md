@@ -72,4 +72,4 @@ Contact: Zna77@proton.me
 
 ## Demo Link
 
-View the live demo of the calculator app https://react-calculator-app7.netlify.app/.
+View the live demo of the calculator app [Live-Demo](https://react-calculator-app7.netlify.app/).
