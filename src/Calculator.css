@@ -1,0 +1,162 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  background-color: #000000;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e91e63, #ffc107);
+  clip-path: circle(22% at 30% 20%);
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff, #da00ff);
+  clip-path: circle(20% at 70% 90%);
+  z-index: -5;
+}
+
+/* Calculator.css */
+.calculator {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.119); /* Light transparent background */
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Apply background blur */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.formula-screen {
+  min-height: 15px;
+  margin-top: 10px;
+  font-family: digital;
+  font-size: 20px;
+  color: orange;
+  text-align: right;
+  line-height: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+input {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  padding-right: 0;
+  font-size: 29px;
+  font-family: digital;
+  text-align: right;
+  line-height: 35px;
+  border: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  background-color: currentcolor;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  height: 65px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+button:active {
+  background: rgba(255, 255, 255, 0.3); /* Adjust background on active/clicked state */
+  transform: scale(0.95); /* Add a scale effect on click */
+}
+
+.key-pressed {
+  background-color: #4d4d4d;
+}
+
+.span-two {
+  grid-column: 1 / 3;
+}
+
+.row-span {
+  grid-row: 6 / 4;
+  grid-column: 4 / 5;
+  height: auto;
+}
+
+/* Calculator.css */
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(238, 254, 5, 0.993);
+  opacity: 0.2;
+}
+
+.author {
+  text-align: center;
+  font-family: Share Tech Mono, sans;
+  margin-top: 30px;
+  color: #cacaca;
+}
+
+.author span {
+  text-decoration: none;
+  color: #cc91e8;
+  line-height: 30px;
+  text-transform: uppercase;
+}
