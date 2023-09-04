@@ -117,7 +117,7 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="w-96 mx-auto mt-14 text-center p-5 bg-opacity-30 backdrop-blur-md border border-slate-200/20 rounded-xl shadow-md">
+      <div className="w-80 sm:w-96 md:w-96 mx-auto mt-14 text-center p-5 bg-opacity-30 backdrop-blur-md border border-slate-200/20 rounded-xl shadow-md">
         <div className="min-h-15 mt-2.5 font-['Digital'] text-xl text-orange-400 text-right leading-3 break-all">
           {input}
         </div>
