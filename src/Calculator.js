@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import * as math from "mathjs";
-import "./Calculator.css";
+import "./styles.css";
 
 const Calculator = () => {
   const [input, setInput] = useState("0");
@@ -117,74 +117,151 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="calculator">
-        <div className="formula-screen">{input}</div>
-        <input type="text" value={input || "0"} readOnly />
-        <div className="buttons">
-          <button data-key="AC" onClick={handleClear}>
+      <div className="w-96 mx-auto mt-14 text-center p-5 bg-opacity-30 backdrop-blur-md rounded-xl shadow-md">
+        <div className="min-h-15 mt-2.5 font-['Digital'] text-xl text-orange-400 text-right leading-3 break-all">
+          {input}
+        </div>
+        <input
+          className="w-full bg-transparent text-white p-2.5 pr-0 text-3xl font-['Digital'] text-right leading-9 border-none"
+          type="text"
+          value={input || "0"}
+          readOnly
+        />
+        <div className="grid grid-cols-4 grid-rows-5 gap-1.5 bg-current p-2.5 rounded-2xl">
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="AC"
+            onClick={handleClear}
+          >
             AC
           </button>
-          <button data-key="/" onClick={() => handleButtonClick("/")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="/"
+            onClick={() => handleButtonClick("/")}
+          >
             ÷
           </button>
-          <button data-key="*" onClick={() => handleButtonClick("*")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="*"
+            onClick={() => handleButtonClick("*")}
+          >
             ×
           </button>
-          <button data-key="Backspace" onClick={handleBackspace}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="Backspace"
+            onClick={handleBackspace}
+          >
             &#9003;
           </button>
-          <button data-key="7" onClick={() => handleButtonClick("7")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="7"
+            onClick={() => handleButtonClick("7")}
+          >
             7
           </button>
-          <button data-key="8" onClick={() => handleButtonClick("8")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="8"
+            onClick={() => handleButtonClick("8")}
+          >
             8
           </button>
-          <button data-key="9" onClick={() => handleButtonClick("9")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="9"
+            onClick={() => handleButtonClick("9")}
+          >
             9
           </button>
-          <button data-key="+" onClick={() => handleButtonClick("+")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="+"
+            onClick={() => handleButtonClick("+")}
+          >
             +
           </button>
-          <button data-key="4" onClick={() => handleButtonClick("4")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="4"
+            onClick={() => handleButtonClick("4")}
+          >
             4
           </button>
-          <button data-key="5" onClick={() => handleButtonClick("5")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="5"
+            onClick={() => handleButtonClick("5")}
+          >
             5
           </button>
-          <button data-key="6" onClick={() => handleButtonClick("6")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="6"
+            onClick={() => handleButtonClick("6")}
+          >
             6
           </button>
-          <button data-key="-" onClick={() => handleButtonClick("-")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="-"
+            onClick={() => handleButtonClick("-")}
+          >
             -
           </button>
-          <button data-key="1" onClick={() => handleButtonClick("1")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="1"
+            onClick={() => handleButtonClick("1")}
+          >
             1
           </button>
-          <button data-key="2" onClick={() => handleButtonClick("2")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="2"
+            onClick={() => handleButtonClick("2")}
+          >
             2
           </button>
-          <button data-key="3" onClick={() => handleButtonClick("3")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="3"
+            onClick={() => handleButtonClick("3")}
+          >
             3
           </button>
           <button
+            className="col-[1_/_3] bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
             data-key="0"
-            className="span-two"
             onClick={() => handleButtonClick("0")}
           >
             0
           </button>
-          <button data-key="." onClick={() => handleButtonClick(".")}>
+          <button
+            className="bg-slate-50/[0.1] text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="."
+            onClick={() => handleButtonClick(".")}
+          >
             .
           </button>
-          <button data-key="=" className="row-span" onClick={handleCalculate}>
+          <button
+            className="col-[4_/_5] row-[6_/_4] bg-slate-50/[0.1] h-auto text-center h-16 text-white border-none rounded-2xl p-2.5 font-share-tech-mono text-lg cursor-pointer transition-all duration 300ms hover:bg-slate-50/[0.2] hover:scale-105 active:bg-slate-50/[0.3] active:scale-95"
+            data-key="="
+            onClick={handleCalculate}
+          >
             =
           </button>
         </div>
       </div>
-      <div className="author">
+      <div className="text-slate-100 text-center mt-8 font-share-tech-mono">
         Designed and Coded By
         <br />
-        <span>Mohamed Bouye</span>
+        <span className="text-purple-400 leading-8 uppercase decoration-none font-bold">
+          Mohamed Bouye
+        </span>
       </div>
     </>
   );
