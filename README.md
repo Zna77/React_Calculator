@@ -55,15 +55,6 @@ The backspace button allows you to delete the last digit of the input.
 
 Contributions are welcome! Feel free to submit pull requests or report issues.
 
-## License
-
-This project is licensed under the MIT License.
-
-## Author
-
-Mohamed Bouye<br/>
-Contact: Zna77@proton.me
-
 ## Acknowledgments
 
 - [Math.js Library](https://mathjs.org/)
@@ -72,3 +63,12 @@ Contact: Zna77@proton.me
 ## Demo Link
 
 View the live demo of the calculator app [Live-Demo](https://react-calculator-app7.netlify.app/).
+
+## Author
+
+Mohamed Bouye<br/>
+Contact: Zna77@proton.me
+
+## License
+
+This project is licensed under the MIT License.
