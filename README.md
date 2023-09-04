@@ -37,6 +37,7 @@ A simple calculator app built using React.
 ## Technologies Used
 
 - React
+- Tailwind CSS
 - Math.js
 
 ## Decimal Precision
