@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         "share-tech-mono": ["Share Tech Mono", "monospace"],
+        digital: ["Digital"],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
     plugins: [],

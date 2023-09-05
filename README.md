@@ -32,7 +32,7 @@ A simple calculator app built using React.
 ## Features
 
 - Basic arithmetic operations (+, -, ×, ÷)
-- Decimal precision for accurate calculations
+- Square root calculations
 
 ## Technologies Used
 
