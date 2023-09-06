@@ -14,7 +14,7 @@ const Calculator = () => {
       } else {
         const lastChar = input.slice(-1);
         const displayValue = value === "*" ? "×" : value === "/" ? "÷" : value;
-        if ("+-*/×÷%".includes(lastChar) && "+-*/×÷%".includes(value)) {
+        if ("+-*/×÷%√".includes(lastChar) && "+-*/×÷%√".includes(value)) {
           setInput(input.slice(0, -1) + displayValue);
         } else {
           setInput(input + displayValue);
